@@ -18,16 +18,21 @@ struct Person {
     }
 
     static func getContacts() -> [Person] {
+        let names = DataStore().names.shuffled()
+        let surnames = DataStore().surnames.shuffled()
+        let phones = DataStore().phones.shuffled()
+        let emails = DataStore().emails.shuffled()
+        
         let contacts = (0...9).map { contact in
             Person(
-                name: DataStore().names[contact],
-                surname: DataStore().surnames[contact],
-                phone: DataStore().phones[contact],
-                email: DataStore().emails[contact]
+                name: names[contact],
+                surname: surnames[contact],
+                phone: phones[contact],
+                email: emails[contact]
             )
         }
         
-        return contacts.shuffled()
+        return contacts
     }
 }
 
