@@ -9,11 +9,7 @@ import UIKit
 
 final class PersonsListViewController: UITableViewController {
     
-    let contacts = Person.getContacts().shuffled()
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
+    var contacts: [Person]!
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let indexPath = tableView.indexPathForSelectedRow else { return }
