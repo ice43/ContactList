@@ -16,23 +16,39 @@ struct Person {
     var fullName: String {
         "\(name) \(surname)"
     }
+    
+    var rows: [String] {
+        [phone, email]
+    }
 
     static func getContacts() -> [Person] {
-        let names = DataStore().names.shuffled()
-        let surnames = DataStore().surnames.shuffled()
-        let phones = DataStore().phones.shuffled()
-        let emails = DataStore().emails.shuffled()
+        var persons: [Person] = []
+        let dataStore = DataStore.shared
         
-        let contacts = (0...9).map { contact in
-            Person(
-                name: names[contact],
-                surname: surnames[contact],
-                phone: phones[contact],
-                email: emails[contact]
+        let names = dataStore.names.shuffled()
+        let surnames = dataStore.surnames.shuffled()
+        let phones = dataStore.phones.shuffled()
+        let emails = dataStore.emails.shuffled()
+        
+        let iterationCount = min(
+            names.count,
+            surnames.count,
+            phones.count,
+            emails.count
+        )
+        
+        for index in 0..<iterationCount {
+            let person = Person(
+                name: names[index],
+                surname: surnames[index],
+                phone: phones[index],
+                email: emails[index]
             )
+            
+            persons.append(person)
         }
         
-        return contacts
+        return persons
     }
 }
 

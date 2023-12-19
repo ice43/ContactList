@@ -18,8 +18,6 @@
 		CD4C0EDB2B2AF20300301F96 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4C0EDA2B2AF20300301F96 /* DataStore.swift */; };
 		CD4C0EDD2B2AF2FF00301F96 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = CD4C0EDC2B2AF2FF00301F96 /* .gitignore */; };
 		CD4C0EDF2B2AFA0E00301F96 /* PersonsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4C0EDE2B2AFA0E00301F96 /* PersonsListViewController.swift */; };
-		CD51E3A42B2C4F8E00101D69 /* SecondNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD51E3A32B2C4F8D00101D69 /* SecondNavigationViewController.swift */; };
-		CD51E3A62B2C510300101D69 /* FirstNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD51E3A52B2C510300101D69 /* FirstNavigationViewController.swift */; };
 		CDF44CDD2B2B3D4500774700 /* ContactDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF44CDC2B2B3D4500774700 /* ContactDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -37,8 +35,6 @@
 		CD4C0EDA2B2AF20300301F96 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 		CD4C0EDC2B2AF2FF00301F96 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		CD4C0EDE2B2AFA0E00301F96 /* PersonsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonsListViewController.swift; sourceTree = "<group>"; };
-		CD51E3A32B2C4F8D00101D69 /* SecondNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondNavigationViewController.swift; sourceTree = "<group>"; };
-		CD51E3A52B2C510300101D69 /* FirstNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstNavigationViewController.swift; sourceTree = "<group>"; };
 		CDF44CDC2B2B3D4500774700 /* ContactDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -106,7 +102,6 @@
 			isa = PBXGroup;
 			children = (
 				CD3A7B6E2B2B7D580028081B /* TabBarViewController.swift */,
-				CD51E3A72B2C513E00101D69 /* NavigationContollers */,
 				CD4C0EDE2B2AFA0E00301F96 /* PersonsListViewController.swift */,
 				CDF44CDC2B2B3D4500774700 /* ContactDetailsViewController.swift */,
 				CD3A7B702B2B83100028081B /* SectionContactsViewController.swift */,
@@ -128,15 +123,6 @@
 				CD4C0EDA2B2AF20300301F96 /* DataStore.swift */,
 			);
 			path = Services;
-			sourceTree = "<group>";
-		};
-		CD51E3A72B2C513E00101D69 /* NavigationContollers */ = {
-			isa = PBXGroup;
-			children = (
-				CD51E3A52B2C510300101D69 /* FirstNavigationViewController.swift */,
-				CD51E3A32B2C4F8D00101D69 /* SecondNavigationViewController.swift */,
-			);
-			path = NavigationContollers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,8 +198,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD3A7B6F2B2B7D580028081B /* TabBarViewController.swift in Sources */,
-				CD51E3A62B2C510300101D69 /* FirstNavigationViewController.swift in Sources */,
-				CD51E3A42B2C4F8E00101D69 /* SecondNavigationViewController.swift in Sources */,
 				CD3A7B712B2B83100028081B /* SectionContactsViewController.swift in Sources */,
 				CD4C0ED82B2AF1C900301F96 /* Person.swift in Sources */,
 				CD4C0EDF2B2AFA0E00301F96 /* PersonsListViewController.swift in Sources */,
