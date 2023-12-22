@@ -58,6 +58,8 @@ final class DataStore {
         "sl_qwerty@gmail.com",
         "swiftbook@gmail.com",
     ]
+    
+    private init() {}
 }
 
 
