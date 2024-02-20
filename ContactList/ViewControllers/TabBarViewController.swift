@@ -28,25 +28,6 @@ final class TabBarViewController: UITabBarController {
         let sectionContactsVC = secondNavigationVC.topViewController
         guard let sectionContactsVC = sectionContactsVC as? SectionContactsViewController else { return }
         sectionContactsVC.contacts = contacts
-        
-// first variant
-//        guard let viewControllers else { return }
-//        
-//        viewControllers.forEach {
-//            if let firstNavigationVC = $0 as? FirstNavigationViewController {
-//                let personsListVC = firstNavigationVC.topViewController
-//                guard let personsListVC = personsListVC as? PersonsListViewController else {
-//                    return
-//                }
-//                personsListVC.contacts = contacts
-//            } else if let secondNavigationVC = $0 as? SecondNavigationViewController {
-//                let sectionContactsVC = secondNavigationVC.topViewController
-//                guard let sectionContactsVC = sectionContactsVC as? SectionContactsViewController else {
-//                    return
-//                }
-//                sectionContactsVC.contacts = contacts
-//            }
-//        }
     }
     
 
